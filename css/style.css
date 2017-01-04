@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.fa-caret-right {
+    color: #555;
+}
+
+.fa-caret-down {
+    color: black;
+}
+
+ul li {
+    margin: 5px;
+}
+
+.fa-folder {
+    color: #555;
+}
+
+.selectedNode {
+    background: #f3f3f3;
+    border: 1px solid #888;
+    padding: 2px;
+    border-radius: 3px;
+}
