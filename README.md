@@ -17,9 +17,11 @@ Using the directive in your app:
 5. Copy the functions from controller.js file and paste them in your controller. (Note: I created a simple api to call for data but in real time, those can be calls made to an actual api that returns data).
 6. Finally in your html, use the following html elemen
 
-      <tree-renderer
+      '<tree-renderer
             get-sub-nodes="vm.getSubNodes(node)" 
             node-name="vm.nodesList"
-            selected-node = "vm.isSelected(node)"></tree-renderer>
+            selected-node = "vm.isSelected(node)">
+            
+       </tree-renderer>'
        
   Plunker: http://plnkr.co/edit/741n1mxbsf0si7vf4J6i
