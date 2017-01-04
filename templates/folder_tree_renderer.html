@@ -1,0 +1,15 @@
+<span ng-click="getSubNodes({node: node})">
+        
+    <i class="fa fw"  ng-class="{true: 'fa-caret-right', false : 'fa-caret-down'}[!node.active || node.active && !node.childs]"></i>
+        
+    &nbsp;<i class="fa fa-folder" aria-hidden="true" ng-if="!node.active || node.active && !node.childs"></i>
+        
+    <i class="fa fa-folder-open" aria-hidden="true" ng-if="node.active && node.childs.length > 0"></i>
+        
+    <span ng-class="{selectedNode: selectedNode({node: node})}">{{node.title}}</span>
+        
+</span>
+    
+<ul>
+    <li class="li-top-margin" ng-repeat="node in node.childs" ng-include="'templates/folder_tree_renderer.html'"></li>
+</ul>
