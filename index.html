@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Angular-Dynamic-Tree">
+    <head>
+        <title>Angular Dynamic Tree</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/angularTreeApp.js"></script>
+        <script src="js/nodesApi.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    
+    <body ng-controller="mainCtrl as vm">
+	   <tree-renderer
+            get-sub-nodes="vm.getSubNodes(node)" 
+            node-name="vm.nodesList"
+            selected-node = "vm.isSelected(node)"
+        >
+        </tree-renderer>
+        
+    </body>
+</html>
